@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: report-service
+  profiles:
+    default: local
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    root: info
+    org.springframework.web: debug
+    org.hibernate.SQL: debug
