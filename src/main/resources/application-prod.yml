@@ -35,4 +35,4 @@ springdoc:
 
 logging:
   file:
-    path: /home/leekyusung/report-service/logs
+    path: /home/leekyusung/service/report/logs

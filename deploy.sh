@@ -1,3 +1,3 @@
-kill $(cat /home/leekyusung/report-service/pid.file) &&
-  rm /home/leekyusung/report-service/pid.file | true
+kill $(cat /home/leekyusung/service/report/pid.file) &&
+  rm /home/leekyusung/service/report/pid.file | true
 nohup ./start.sh &
